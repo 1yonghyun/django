@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Articles</h1>
+  <a href="{% url 'articles:create' %}">CREATE</a>
+  <hr>
+  {% for article in articles %}
+    <p>글 번호:
+      {{ article.pk }}</p>
+  {% endfor %}
+
+{% endblock content %}
