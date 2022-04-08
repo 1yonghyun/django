@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block contents %}
+{% block content %}
   <h1>Articles</h1>
   <a href="{% url 'articles:create' %}">CREATE</a>
   <hr>
@@ -14,4 +14,4 @@
     <a href="{% url 'articles:detail' article.pk %}">DETAIL</a>
     <hr>
   {% endfor %}
-{% endblock contents %}
+{% endblock content %}
